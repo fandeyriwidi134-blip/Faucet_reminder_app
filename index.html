@@ -5,44 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faucet Reminder</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div class="container">
     <h1>💧 Faucet Reminder</h1>
-    <p>Atur & pantau faucet Anda — tidak pernah ketinggalan claim!</p>
+    <p>Atur faucet & dapat notifikasi Telegram otomatis!</p>
 
-    <!-- Form Tambah Faucet -->
     <div class="input-section">
-      <input type="text" id="nama" placeholder="Nama Faucet (contoh: WheelOfGold)" />
+      <input type="text" id="nama" placeholder="Nama Faucet" />
       <input type="url" id="url" placeholder="https://faucet.com" />
       <input type="number" id="menit" placeholder="Interval (menit)" min="1" />
       <button onclick="tambahFaucet()">➕ Tambah</button>
     </div>
 
-    <!-- Peringatan Scam -->
     <div id="scam-warning" class="warning hidden">
       ⚠️ <strong>PERINGATAN SCAM:</strong> <span id="scam-message"></span>
     </div>
 
-    <!-- Daftar Faucet -->
     <ul id="daftar-faucet"></ul>
 
-    <!-- Tombol Aksi -->
     <div class="actions">
       <button onclick="exportData()">📤 Export Data</button>
       <input type="file" id="importFile" accept=".json" style="display:none" />
       <button onclick="document.getElementById('importFile').click()">📥 Import Data</button>
-      <button onclick="clearAll()" class="btn-danger">🗑️ Hapus Semua</button>
     </div>
 
-    <!-- Info -->
     <div class="info">
       <details>
         <summary>ℹ️ Tips Aman</summary>
         <p>• Jangan bagikan private key<br>
-        • Hindari faucet yang minta deposit<br>
-        • Gunakan browser khusus untuk Web3</p>
+        • Hindari faucet minta deposit<br>
+        • Gunakan browser khusus Web3</p>
       </details>
     </div>
   </div>

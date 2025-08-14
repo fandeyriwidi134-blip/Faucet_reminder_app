@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fc;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #0d9488;
+  margin-bottom: 16px;
+}
+
+p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #0f766e;
+}
+
+.btn-danger {
+  background: #ef4444;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* Peringatan Scam */
+.warning {
+  padding: 12px;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  margin: 16px 0;
+  color: #991b1b;
+  font-size: 14px;
+}
+
+.warning.hidden {
+  display: none;
+}
+
+/* Daftar Faucet */
+#daftar-faucet {
+  list-style: none;
+}
+
+#daftar-faucet li {
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#daftar-faucet a {
+  color: #0d9488;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#daftar-faucet a:hover {
+  text-decoration: underline;
+}
+
+.hapus {
+  color: #ef4444;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.actions {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.actions button {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.info {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+}

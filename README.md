@@ -1,21 +1,18 @@
-# Faucet Reminder App
+# Faucet Reminder - Vercel Edition
 
-Aplikasi web sederhana untuk mengingatkan Anda saat sudah bisa claim faucet.
+Dashboard + notifikasi Telegram otomatis — tanpa Replit!
 
-## ✅ Fitur
-- Tambah/hapus faucet
-- Peringatan scam otomatis
-- Export/import data
-- Notifikasi Telegram (opsional)
+## 🚀 Deploy ke Vercel
+1. Fork repo ini
+2. Push ke GitHub
+3. Import ke Vercel
+4. Tambahkan environment variables
+5. Setup UptimeRobot ke `/api/reminder`
 
-## 🚀 Cara Pakai
-1. Buka `index.html` di browser
-2. Tambah faucet Anda
-3. (Opsional) Setup `reminder.py` di Replit + Telegram
+## 🔐 Env Variables
+- `TELEGRAM_TOKEN`
+- `CHAT_ID`
+- `GOOGLE_SCRIPT_URL`
 
-## 🔐 Keamanan
-- Tidak ada auto-claim
-- Tidak simpan data sensitif
-- Semua data lokal
-
-Dibuat dengan ❤️ untuk komunitas Web3 Indonesia.
+## 🕰️ Jadwal
+Gunakan [UptimeRobot](https://uptimerobot.com) → cek `/api/reminder` tiap 30 menit
